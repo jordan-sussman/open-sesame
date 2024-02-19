@@ -6,8 +6,8 @@ with a yearning for them to have a drawer component. Luckily, there's Dialog.
 
 https://github.com/jordan-sussman/open-sesame/assets/52428171/01eee7f8-0536-47ee-89d0-e8ba9e5cb0dd
 
-In this example, the drawer opens from the <b>left</b> with a depth
-of <b>450</b>px and a border radius of <b>20</b>px.
+In this example, the drawer is styled, opens from the `left`, has a size
+of `450`, and a border radius of `20`.
 
 ## Usage
 ```jsx
@@ -61,4 +61,4 @@ To run example locally with Vite:
 ```bash
 npm run dev
 ```
-Note that the project example was built using Vite. If you want to view the example, and Vite provides prompts, select 'React' then 'TypeScript'.
+Note that the project example was built using Vite. If you want to view the example, and Vite provides prompts, select `React` then `TypeScript`.
