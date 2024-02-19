@@ -52,15 +52,15 @@ as 0.
 - `visible` (optional): This is required for the drawer's animation powered by framer-motion. The value is used for the drawer's enter and exit animations. The value must be a boolean. I recommend using React's useState and the Root component's `open` and `onOpenChange` prop. See the example above.
 
 ## Subcomponents
-`Drawer.Root` - Parent element that contains all elements of the component. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#root)
+`Root` - Parent element that contains all elements of the component. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#root)
 
-`Drawer.Trigger` - The button or element used to open. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#trigger)
+`Trigger` - The button or element used to open. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#trigger)
 
-`Drawer.Content` - The wrapper that renders the content. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#content)
+`Content` - The wrapper that renders the content. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#content)
 
-`Drawer.Title` - An accessible title that's announced when opened. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#title)
+`Title` - An accessible title that's announced when opened. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#title)
 
-`Drawer.Description` - An accessible description that's announced when opened. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#description)
+`Description` - An accessible description that's announced when opened. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#description)
 
 `Close` - The button or element used to close. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#close)
 
