@@ -35,16 +35,16 @@ all Radix features out of the box. On top of this, Open Sesame adds
 a few more to make it a truly powerful drawer component.
 
 I said powerful, right? The drawer is supercharged by the following props:
-- **origin** (required): Choose where the drawer opens from. The value can be
+- `origin` (required): Choose where the drawer opens from. The value can be
   - `top`
   - `right`
   - `bottom`
   - `left`
-- **size** (required): Choose the depth of the drawer. The value can be either a
+- `size` (required): Choose the depth of the drawer. The value can be either a
 number for the number of pixels or a percentage as a string for the percentage of the view.
-- radius (optional): Choose the border radius of the drawer. The value is the pixel value as a number. If none is provided, the border radius defaults
+- `radius` (optional): Choose the border radius of the drawer. The value is the pixel value as a number. If none is provided, the border radius defaults
 as 0.
-- **visible** (optional): This is required for the drawer's animation powered by framer-motion. The value is used for the drawer's enter and exit animations. The value must be a boolean. I recommend using React's useState and the Root component's `open` and `onOpenChange` prop. See the example above.
+- `visible` (optional): This is required for the drawer's animation powered by framer-motion. The value is used for the drawer's enter and exit animations. The value must be a boolean. I recommend using React's useState and the Root component's `open` and `onOpenChange` prop. See the example above.
 
 ## Poke Around
 You can find the component under `src/OpenSesame`.
