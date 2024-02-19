@@ -37,7 +37,6 @@ Because Open Sesame is built with Radix's Dialog primitive, you get
 all Radix features out of the box. On top of this, Open Sesame adds
 a few more to make it a truly powerful drawer component.
 
-I said powerful, right? The drawer is supercharged by the following props:
 - `origin` (required): Choose where the drawer opens from. The value can be
   - `top`
   - `right`
