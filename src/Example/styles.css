@@ -1,0 +1,40 @@
+/*
+These styles are specific for styling the
+implementation example of the Drawer component
+in App.tsx.
+*/
+
+.content {
+    color: black;
+    background-color: white;
+}
+
+.header {
+    background-color: #e0e8f0;
+    position: sticky;
+    top: 0;
+}
+
+.headersection {
+    margin: 0;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.body {
+    display: block;
+    margin: 0 auto;
+    overflow-y: auto;
+    padding: 20px;
+    margin-bottom: 12px;
+}
