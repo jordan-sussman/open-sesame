@@ -25,6 +25,13 @@ function MyComponent() {
           size={size} // # or '' (px or %)
           visible={open} // bool
         >
+          <Drawer.Close />
+          <Drawer.Title>
+            Open Sesame
+          </Drawer.Title>
+          <Drawer.Description>
+            Lovely stuff.
+          <Drawer.Description>
           <div>Content</div>
         </Drawer.Content>
     </Drawer.Root>
@@ -32,9 +39,9 @@ function MyComponent() {
 }
 ```
 
-## Features and Props
+## Props
 Because Open Sesame is built with Radix's Dialog primitive, you get
-all Radix features out of the box. On top of this, Open Sesame adds
+all Radix props out of the box. On top of this, Open Sesame adds
 a few more to make it a truly powerful drawer component.
 
 - `origin` (required): Choose where the drawer opens from. The value can be
@@ -47,6 +54,19 @@ number for the number of pixels or a percentage as a string for the percentage o
 - `radius` (optional): Choose the border radius of the drawer. The value is the pixel value as a number. If none is provided, the border radius defaults
 as 0.
 - `visible` (optional): This is required for the drawer's animation powered by framer-motion. The value is used for the drawer's enter and exit animations. The value must be a boolean. I recommend using React's useState and the Root component's `open` and `onOpenChange` prop. See the example above.
+
+## Subcomponents
+`Drawer.Root` - Parent element that contains all elements of the component. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#root)
+
+`Drawer.Trigger` - The button or element used to open. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#trigger)
+
+`Drawer.Content` - The wrapper that renders the content. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#content)
+
+`Drawer.Title` - An accessible title that's announced when opened. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#title)
+
+`Drawer.Description` - An accessible description that's announced when opened. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#description)
+
+`Close` - The button or element used to close. [Props.](https://www.radix-ui.com/docs/primitives/components/dialog#close)
 
 ## Poke Around
 Find the component in `src/OpenSesame`.
