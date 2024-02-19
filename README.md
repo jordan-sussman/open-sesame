@@ -25,7 +25,7 @@ function MyComponent() {
           size={size} // # or '' (px or %)
           visible={open} // bool
         >
-          <p>Content</p>
+          <div>Content</div>
         </Drawer.Content>
     </Drawer.Root>
   )
