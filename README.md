@@ -1,5 +1,5 @@
 # Open Sesame
-Open Sesame is an unstyled, versatile, customizable, responsive, and accessible drawer component for React. Built with Radix and animated with framer-motion, it's designed to be a drop-in solution to fulfill all your drawer needs.
+Open Sesame is an unstyled, versatile, customizable, responsive, and accessible drawer component for React. Built with Radix and animated with framer-motion, it's designed to be a drop-in solution to fulfill all your drawer needs. You can put anything your heart desires into this drawer; the only limit is your imagination.
 
 The idea was sparked from my love of the Radix primitive library mixed
 with a yearning for them to have a drawer component. Luckily, there's Dialog.
