@@ -26,12 +26,8 @@ function MyComponent() {
           visible={open} // bool
         >
           <Drawer.Close />
-          <Drawer.Title>
-            Open Sesame
-          </Drawer.Title>
-          <Drawer.Description>
-            Lovely stuff.
-          <Drawer.Description>
+          <Drawer.Title>Open Sesame</Drawer.Title>
+          <Drawer.Description>Lovely stuff.<Drawer.Description>
           <div>Content</div>
         </Drawer.Content>
     </Drawer.Root>
