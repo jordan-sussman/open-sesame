@@ -49,8 +49,9 @@ as 0.
 - `visible` (optional): This is required for the drawer's animation powered by framer-motion. The value is used for the drawer's enter and exit animations. The value must be a boolean. I recommend using React's useState and the Root component's `open` and `onOpenChange` prop. See the example above.
 
 ## Poke Around
-You can find the component under `src/OpenSesame`.
-You can find an example implementation under `src/Example`.
+Find the component under `src/OpenSesame`.
+<br>
+Find an example implementation from the above video under `src/Example`.
 
 ## Setup Locally
 Install:
