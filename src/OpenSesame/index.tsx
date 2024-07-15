@@ -13,8 +13,6 @@ const Content = React.forwardRef<HTMLDivElement, ContentProps>(function (
   { style, ...props },
   ref,
 ) {
-  // Fallback valiation for size to a proper value in case of invalid input.
-  // If the size is a string and not a number, in the styles, fallback is 100%.
   const sizeChecker = (size: ContentProps["size"]) => {
     if (typeof size === "string" && !size.includes("%")) {
       const parsedSize = parseInt(size, 10);
@@ -23,23 +21,36 @@ const Content = React.forwardRef<HTMLDivElement, ContentProps>(function (
     return size;
   };
 
-  // Animation properties for framer-motion
+  const calculateSize = (
+    size: ContentProps["size"],
+    dimension: "width" | "height",
+  ) => {
+    if (typeof size === "string" && size.includes("%")) {
+      const percentage = parseFloat(size) / 100;
+      return (
+        (dimension === "width" ? window.innerWidth : window.innerHeight) *
+        percentage
+      );
+    }
+    return typeof size === "number" ? size : parseInt(size, 10);
+  };
+
   let initial, animate;
   switch (props.origin) {
     case "left":
-      initial = { x: -props.size };
+      initial = { x: -calculateSize(props.size, "width") };
       animate = { x: 0 };
       break;
     case "right":
-      initial = { x: props.size };
+      initial = { x: calculateSize(props.size, "width") };
       animate = { x: 0 };
       break;
     case "top":
-      initial = { y: -props.size };
+      initial = { y: -calculateSize(props.size, "height") };
       animate = { y: 0 };
       break;
     case "bottom":
-      initial = { y: props.size };
+      initial = { y: calculateSize(props.size, "height") };
       animate = { y: 0 };
       break;
   }
