@@ -20,7 +20,7 @@ function MyComponent() {
       <Drawer.Trigger>Open</Drawer.Trigger>
         <Drawer.Content
           origin={origin} // string
-          radius={radius} // number
+          radius={radius} // number (optional)
           size={size} // number or string (px or %)
           visible={open} // boolean (optional)
         >
