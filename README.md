@@ -22,7 +22,7 @@ function MyComponent() {
           origin={origin} // string
           radius={radius} // number
           size={size} // number or string (px or %)
-          visible={open} // boolean
+          visible={open} // boolean (optional)
         >
           <Drawer.Close />
           <Drawer.Title>Open Sesame</Drawer.Title>
