@@ -19,15 +19,15 @@ function MyComponent() {
     <Drawer.Root open={open} onOpenChange={setOpen}>
       <Drawer.Trigger>Open</Drawer.Trigger>
         <Drawer.Content
-          origin={origin} // ''
-          radius={radius} // #
-          size={size} // # or '' (px or %)
-          visible={open} // bool
+          origin={origin} // string
+          radius={radius} // number
+          size={size} // number or string (px or %)
+          visible={open} // boolean
         >
           <Drawer.Close />
           <Drawer.Title>Open Sesame</Drawer.Title>
-          <Drawer.Description>Lovely stuff.<Drawer.Description>
-          <div>Content</div>
+          <Drawer.Description>A nice drawer.<Drawer.Description>
+          <div>Drawer content here.</div>
         </Drawer.Content>
     </Drawer.Root>
   )
