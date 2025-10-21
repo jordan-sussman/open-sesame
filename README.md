@@ -26,7 +26,7 @@ function MyComponent() {
         >
           <Drawer.Close />
           <Drawer.Title>Open Sesame</Drawer.Title>
-          <Drawer.Description>A nice drawer.<Drawer.Description>
+          <Drawer.Description>A nice drawer.</Drawer.Description>
           <div>Drawer content here.</div>
         </Drawer.Content>
     </Drawer.Root>
